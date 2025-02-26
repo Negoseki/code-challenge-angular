@@ -1,0 +1,13 @@
+<label for="search">Search: </label>
+<input id="search" type="text" [formControl]="searchControl" />
+
+<div class="card-list">
+  @for( user of filteredUsers; track user.id){
+
+  <div class="card">
+    <p>{{ user.firstname }} {{ user.lastname }}</p>
+    <p>{{ user.email }}</p>
+  </div>
+
+  }
+</div>

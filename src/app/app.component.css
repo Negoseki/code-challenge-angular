@@ -1,0 +1,17 @@
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card {
+  background: lightblue;
+  padding: 0.5rem;
+  width: 400px;
+  border-radius: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
